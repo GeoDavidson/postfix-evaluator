@@ -146,5 +146,5 @@ int main()
     }
 
     postfixEvaluator(head);
-    return 0;
+    return EXIT_SUCCESS;
 }
