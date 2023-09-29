@@ -102,8 +102,7 @@ void postfixEvaluator(node *head)
     node *current = head;
     while (current != NULL)
     {
-        if (isalnum(*current->data) || (current->data[0] == '-' &&
-                                        strlen(current->data) > 1))
+        if (isalnum(*current->data) || (current->data[0] == '-' && strlen(current->data) > 1))
         {
             int num = atoi(current->data);
             push(num);
